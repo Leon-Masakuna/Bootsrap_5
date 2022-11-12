@@ -2,7 +2,11 @@
     margin-top: 7%;
 }
 
-@media screen and (max-width: 320px) {
+img, .code-image, .design-image, .profile-photo{
+    border-radius: 5%;
+}
+
+@media screen and (max-width: 375px) {
     .my_title{
         margin-top: 8%;
     }
