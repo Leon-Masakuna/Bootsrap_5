@@ -1,0 +1,12 @@
+.main{
+    margin-top: 7%;
+}
+
+@media screen and (max-width: 320px) {
+    .my_title{
+        margin-top: 8%;
+    }
+    .main{
+        margin: 0;
+    }
+}
