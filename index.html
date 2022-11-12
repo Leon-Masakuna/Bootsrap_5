@@ -11,25 +11,73 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/14273d579a.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
-      <nav class="bg-light">
+      <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top">
         <div class="container">
-          <div class="bg-secondary py-4"></div>
+          <!-- <div class="bg-secondary py-4"></div> -->
+          <a class="navbar-brand text-uppercase fw-bold" href="/index.html">
+            <span class="bg-primary bg-gradient p-1 rounded-3 text-light"
+              >LMF MAS</span
+            >
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#johndoe">Qui suis-je ?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#expertise">Expertises</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
-    <main>
-      <section class="my-5">
+    <main class="main">
+      <section id="johndoe" class="my-5">
         <div class="container">
-          <div class="row gy-4 gy-md-0">
+          <div class="row gy-4 align-items-center">
             <div class="col-12 col-md-6">
-              <h1>
-                Je suis Léon Mfeng, Analyste Concepteur et Développeur FullStack
+              <h1 class="fw-bold my_title">
+                Je suis Léon Mfeng, Analyste Concepteur et Développeur Web
               </h1>
-              <h2>Bienvenue dans mon univers créatif</h2>
-              <button>Mon expertise en développement web</button>
+              <h2 class="fw-light">Bienvenue dans mon univers créatif</h2>
+              <!-- <a class="btn btn-primary" href="#" role="button">Lien</a> -->
+              <a href="#expertise" class="btn btn-primary mt-5"
+                >Mon expertise en développement web</a
+              >
             </div>
             <div class="col-12 col-md-6">
               <img src="./images/2-01.png" alt="Léon Mfeng" class="w-100" />
@@ -37,12 +85,12 @@
           </div>
         </div>
       </section>
-      <section class="py-5 bg-light">
+      <section id="expertise" class="py-5 bg-light">
         <div class="container">
-          <h2>Mon expertise</h2>
-          <h3>Développement web et design</h3>
+          <h2 class="mb-0">Mon expertise</h2>
+          <h3 class="fw-light fs-5">Développement web et Database design</h3>
           <!-- Developpement -->
-          <div class="row gy-4 mt-5">
+          <div class="row gy-4 mt-4">
             <div class="col-12 col-md-7">
               <div class="bg-secondary h-100 w-100 py-5"></div>
             </div>
@@ -56,7 +104,7 @@
           </div>
 
           <!-- Design -->
-          <div class="row gy-4 mt-5">
+          <div class="row gy-4 mt-4">
             <div class="col-12 col-md-4">
               <img
                 src="./images/programming.jpg"
@@ -71,9 +119,9 @@
         </div>
       </section>
       <section class="py-5">
-        <div class="container">
-          <h2>Mon portfolio</h2>
-          <h3>Projets perso et pro</h3>
+        <div id="portfolio" class="container">
+          <h2 class="mb-0">Mon portfolio</h2>
+          <h3 class="fw-light fs-5">Projets perso et pro</h3>
           <div class="row gy-4 mt-4">
             <div class="col-3">
               <div class="bg-secondary h-100 w-100 py-5"></div>
@@ -90,12 +138,12 @@
           </div>
         </div>
       </section>
-      <section class="py-5 bg-light">
+      <section id="contact" class="py-5 bg-light">
         <div class="container">
-          <h2>Un projet de création web ?</h2>
-          <h3>Allons en discuter autour d'un café</h3>
+          <h2 class="mb-0">Un projet de création web ?</h2>
+          <h3 class="fw-light fs-5">Allons en discuter autour d'un café</h3>
 
-          <div class="row gy-4 mt-5">
+          <div class="row gy-4 mt-4">
             <div class="col-12 col-md-5">
               <img
                 src="./images/cofee.jpg"
@@ -112,15 +160,54 @@
     </main>
     <footer class="border-top">
       <div class="container py-5">
-        <div class="row gy-4">
+        <div class="row gy-4 align-items-center">
           <div class="col-12 col-md-4">
-            <div class="bg-secondary py-5"></div>
+            <a class="navbar-brand text-dark text-uppercase fw-bold" href="#">
+              <span class="bg-primary bg-gradient p-1 rounded-3 text-light"
+                >Léon</span
+              >
+              Masakuna Mfeng
+            </a>
+            <!-- <div class="bg-secondary py-5"></div> -->
           </div>
-          <div class="col-12 col-md-4">
-            <div class="bg-secondary py-5"></div>
+          <div class="col-12 col-md-4 text-md-center">
+            <!-- <div class="bg-secondary py-5"></div> -->
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#" class="text-decoration-none text-dark"
+                  >Mentions légales</a
+                >
+              </li>
+            </ul>
           </div>
-          <div class="col-12 col-md-4">
-            <div class="bg-secondary py-5"></div>
+          <div class="col-12 col-md-4 text-md-end">
+            <!-- <div class="bg-secondary py-5"> -->
+            <!-- Ajout linkedin icon -->
+            <!-- <a href="”mon" lien linkedin” target="”_blank”">
+                <i class="bi bi-linkedin"></i>
+              </a> -->
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item">
+                <a href="#" class="text-decoration-none text-dark"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-decoration-none text-dark"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-decoration-none text-dark"
+                  ><i class="bi bi-twitter"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-decoration-none text-dark"
+                  ><i class="bi bi-github"></i
+                ></a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
