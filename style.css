@@ -6,6 +6,10 @@ img, .code-image, .design-image, .profile-photo{
     border-radius: 5%;
 }
 
+.image-projet{
+    height: 24.8vh;
+}
+
 @media screen and (max-width: 375px) {
     .my_title{
         margin-top: 8%;
