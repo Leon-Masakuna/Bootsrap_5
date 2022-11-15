@@ -2,12 +2,12 @@
     margin-top: 7%;
 }
 
-img, .code-image, .design-image, .profile-photo{
+img, .code-image, .design-image{
     border-radius: 5%;
 }
 
-.image-projet{
-    height: 24.8vh;
+.profile-photo{
+    border-radius: 5%;
 }
 
 @media screen and (max-width: 375px) {
