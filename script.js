@@ -36,16 +36,24 @@ form.addEventListener("submit", handleSubmit);
 
 //Tooltips for icons and progress bar
 
-let tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+let tooltipTriggerList = [].slice.call(
+  document.querySelectorAll('[data-bs-toggle="tooltip"]')
+);
 let tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-    return new bootstrap.Tooltip(tooltipTriggerEl)
-})
+  return new bootstrap.Tooltip(tooltipTriggerEl);
+});
 
 //Hide collapse navbar on option click
 
-const navLinks = document.querySelectorAll('.nav-item')
-const menuToggle = document.getElementById('navbarNav')
-const bsCollapse = new bootstrap.Collapse(menuToggle)
+const navLinks = document.querySelectorAll(".nav-item");
+const menuToggle = document.getElementById("navbarNav");
+const bsCollapse = new bootstrap.Collapse(menuToggle);
 navLinks.forEach((item) => {
-    item.addEventListener('click', () => { bsCollapse.toggle() })
-})
+  item.addEventListener("click", () => {
+    bsCollapse.toggle();
+  });
+});
+
+document.oncontextmenu = function () {
+  return false;
+};
