@@ -54,6 +54,8 @@ navLinks.forEach((item) => {
   });
 });
 
+//Prevent right click on the ui
+
 document.oncontextmenu = function () {
   return false;
 };
