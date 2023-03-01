@@ -1,20 +1,28 @@
-.main{
-    margin-top: 7%;
+.main {
+  margin-top: 7%;
 }
 
-img, .code-image, .design-image{
-    border-radius: 5%;
+img,
+.code-image,
+.design-image {
+  border-radius: 5%;
 }
 
-.profile-photo{
-    border-radius: 5%;
+.profile-photo {
+  border-radius: 5%;
+}
+
+#project-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @media screen and (max-width: 375px) {
-    .my_title{
-        margin-top: 8%;
-    }
-    .main{
-        margin: 0;
-    }
+  .my_title {
+    margin-top: 8%;
+  }
+  .main {
+    margin: 0;
+  }
 }
